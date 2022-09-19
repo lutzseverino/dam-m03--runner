@@ -1,7 +1,8 @@
-package com.lutzseverino.snippets;
+package com.lutzseverino.snippets.impl;
 
 import com.lutzseverino.annotation.IncludeClassName;
 import com.lutzseverino.annotation.Name;
+import com.lutzseverino.snippets.Snippet;
 
 @Name("exit")
 @IncludeClassName

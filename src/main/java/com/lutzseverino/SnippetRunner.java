@@ -2,6 +2,7 @@ package com.lutzseverino;
 
 import com.lutzseverino.registry.SnippetRegistry;
 import com.lutzseverino.snippets.*;
+import com.lutzseverino.snippets.impl.*;
 import com.lutzseverino.util.Color;
 
 import java.util.Scanner;

@@ -1,7 +1,8 @@
-package com.lutzseverino.snippets;
+package com.lutzseverino.snippets.impl;
 
 import com.lutzseverino.SnippetRunner;
 import com.lutzseverino.annotation.Name;
+import com.lutzseverino.snippets.Snippet;
 
 @Name("list")
 public class ListSnippets implements Snippet {
