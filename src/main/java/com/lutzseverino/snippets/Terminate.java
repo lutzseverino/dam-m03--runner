@@ -3,7 +3,8 @@ package com.lutzseverino.snippets;
 import com.lutzseverino.annotation.IncludeClassName;
 import com.lutzseverino.annotation.Name;
 
-@Name("exit") @IncludeClassName
+@Name("exit")
+@IncludeClassName
 public class Terminate implements Snippet {
 
     @Override

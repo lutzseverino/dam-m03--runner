@@ -4,8 +4,7 @@ import com.lutzseverino.annotation.Name;
 
 import java.util.Scanner;
 
-@Name("percentage")
-@Name("class")
+@Name("percentage") @Name("class")
 public class MaleFemalePercentage implements Snippet {
 
     /*
