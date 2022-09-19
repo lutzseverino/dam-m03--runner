@@ -27,7 +27,8 @@ public class SnippetRunner {
                 new Terminate(),
                 new ListSnippets(),
                 new HealthcareSalary(),
-                new MaleFemalePercentage()
+                new MaleFemalePercentage(),
+                new GironaRiver()
         );
 
         execute(getRegistry());
