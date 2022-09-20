@@ -29,7 +29,10 @@ public class SnippetRunner {
                 new ListSnippets(),
                 new HealthcareSalary(),
                 new MaleFemalePercentage(),
-                new GironaRiver()
+                new GironaRiver(),
+                new NegativeNumberLoop(),
+                new PassOrNoPass(),
+                new DayTrader()
         );
 
         execute(getRegistry());
