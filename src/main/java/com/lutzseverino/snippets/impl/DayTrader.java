@@ -1,9 +1,11 @@
 package com.lutzseverino.snippets.impl;
 
+import com.lutzseverino.annotation.Name;
 import com.lutzseverino.snippets.Snippet;
 
 import java.util.Scanner;
 
+@Name("trade")
 public class DayTrader implements Snippet {
 
     /*
