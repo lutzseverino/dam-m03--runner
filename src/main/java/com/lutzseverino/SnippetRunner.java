@@ -32,7 +32,8 @@ public class SnippetRunner {
                 new GironaRiver(),
                 new NegativeNumberLoop(),
                 new PassOrNoPass(),
-                new DayTrader()
+                new DayTrader(),
+                new WaterCost()
         );
 
         execute(getRegistry());
