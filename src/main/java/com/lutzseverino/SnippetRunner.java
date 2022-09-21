@@ -26,15 +26,15 @@ public class SnippetRunner {
     public void init() {
         getRegistry().registerAlgorithms(
                 new Terminate(),
-                new ListSnippets(),
+                new ListAvailable(),
                 new HealthcareSalary(),
                 new MaleFemalePercentage(),
-                new GironaRiver(),
+                new RiverDoor(),
                 new NegativeNumberLoop(),
                 new PassOrNoPass(),
                 new DayTrader(),
                 new WaterCost(),
-                new Dealership()
+                new DealershipSalary()
         );
 
         execute(getRegistry());

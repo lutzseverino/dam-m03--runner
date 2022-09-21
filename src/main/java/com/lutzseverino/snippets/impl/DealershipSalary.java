@@ -4,7 +4,7 @@ import com.lutzseverino.snippets.Snippet;
 
 import java.util.Scanner;
 
-public class Dealership implements Snippet {
+public class DealershipSalary implements Snippet {
 
     /*
         START

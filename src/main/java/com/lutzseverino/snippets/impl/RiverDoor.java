@@ -6,7 +6,7 @@ import com.lutzseverino.snippets.Snippet;
 import java.util.Scanner;
 
 @Name("river") @Name("girona")
-public class GironaRiver implements Snippet {
+public class RiverDoor implements Snippet {
 
     /*
         START
