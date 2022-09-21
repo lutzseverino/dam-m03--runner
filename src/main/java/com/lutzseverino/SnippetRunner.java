@@ -34,7 +34,8 @@ public class SnippetRunner {
                 new PassOrNoPass(),
                 new DayTrader(),
                 new WaterCost(),
-                new DealershipSalary()
+                new DealershipSalary(),
+                new HostelCost()
         );
 
         execute(getRegistry());
