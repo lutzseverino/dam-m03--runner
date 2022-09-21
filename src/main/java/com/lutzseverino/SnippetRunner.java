@@ -33,7 +33,8 @@ public class SnippetRunner {
                 new NegativeNumberLoop(),
                 new PassOrNoPass(),
                 new DayTrader(),
-                new WaterCost()
+                new WaterCost(),
+                new Dealership()
         );
 
         execute(getRegistry());
