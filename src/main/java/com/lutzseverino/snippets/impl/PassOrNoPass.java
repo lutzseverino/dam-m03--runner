@@ -2,8 +2,7 @@ package com.lutzseverino.snippets.impl;
 
 import com.lutzseverino.annotation.Name;
 import com.lutzseverino.snippets.Snippet;
-
-import java.util.Scanner;
+import com.lutzseverino.question.Question;
 
 @Name("pass")
 public class PassOrNoPass implements Snippet {
@@ -36,26 +35,18 @@ public class PassOrNoPass implements Snippet {
         END
      */
     @Override public void run() {
-        Scanner scanner = new Scanner(System.in);
+        Question question = new Question();
 
-        System.out.println("¿Cuántos alumnos hay?: ");
-        int students = scanner.nextInt();
+        System.out.println();
+        int students = question.askInt("¿Cuántos alumnos hay?: ");
 
         for (int i = 0; i < students; i++) {
             System.out.println("Para el alumno nº" + (i + 1));
 
-            System.out.print("Introduce la nota de los ejercicios entregables: ");
-            double exercises = scanner.nextDouble();
-
-            System.out.print("Introduce la nota de los POUS evaluables: ");
-            double pous = scanner.nextDouble();
-
-            System.out.print("Introduce la nota del examen final: ");
-            double finalExam = scanner.nextDouble();
-
-            System.out.print("Introduce la nota de la práctica final: ");
-            double finalEssay = scanner.nextDouble();
-
+            double exercises = question.askDouble("Introduce la nota de los ejercicios entregables: ");
+            double pous = question.askDouble("Introduce la nota de los POUS evaluables: ");
+            double finalExam = question.askDouble("Introduce la nota del examen final: ");
+            double finalEssay = question.askDouble("Introduce la nota de la práctica final: ");
             double average = (exercises * 0.10) + (pous * 0.20) + (finalExam * 0.40) + (finalEssay * 0.30);
 
             System.out.print("\n");

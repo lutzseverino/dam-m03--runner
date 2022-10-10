@@ -2,10 +2,10 @@ package com.lutzseverino.snippets.impl;
 
 import com.lutzseverino.annotation.Name;
 import com.lutzseverino.snippets.Snippet;
+import com.lutzseverino.question.Question;
 
-import java.util.Scanner;
-
-@Name("overtime") @Name("salary")
+@Name("overtime")
+@Name("salary")
 public class HealthcareSalary implements Snippet {
 
     /*
@@ -41,16 +41,11 @@ public class HealthcareSalary implements Snippet {
             SHOW ("Lo que deja un salario final de €" + totalSalary);
      */
     @Override public void run() {
-        Scanner scanner = new Scanner(System.in);
+        Question question = new Question();
 
-        System.out.print("¿Estás enfermo? (s/n): ");
-        boolean isSick = scanner.nextLine().equals("s");
-
-        System.out.print("¿Cuántas horas extra trabajaste?: ");
-        int overtimeHours = scanner.nextInt();
-
-        System.out.print("¿Cuál es tu salario base?: ");
-        int baseSalary = scanner.nextInt();
+        boolean isSick = question.askBoolean("¿Estás enfermo? (true/false): ");
+        int overtimeHours = question.askInt("¿Cuántas horas extra trabajaste?: ");
+        int baseSalary = question.askInt("¿Cuál es tu salario base?: ");
 
         int firstOvertimeRate = 15;
         int secondOvertimeRate = 12;

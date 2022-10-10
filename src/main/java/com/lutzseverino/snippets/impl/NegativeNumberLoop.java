@@ -2,10 +2,10 @@ package com.lutzseverino.snippets.impl;
 
 import com.lutzseverino.annotation.Name;
 import com.lutzseverino.snippets.Snippet;
+import com.lutzseverino.question.Question;
 
-import java.util.Scanner;
-
-@Name("negative") @Name("loop")
+@Name("negative")
+@Name("loop")
 public class NegativeNumberLoop implements Snippet {
 
     /*
@@ -19,11 +19,6 @@ public class NegativeNumberLoop implements Snippet {
         END
      */
     @Override public void run() {
-        int number = -1;
-
-        while (number < 0 || number > 10) {
-            System.out.print("Introduce un número entre el 0 y el 10 entre para salir: ");
-            number = new Scanner(System.in).nextInt();
-        }
+        new Question().askInt("Introduce un número entre el 0 y el 10 para salir: ", (i) -> i >= 0 && i <= 10);
     }
 }

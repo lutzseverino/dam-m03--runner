@@ -2,11 +2,10 @@ package com.lutzseverino.snippets.impl;
 
 import com.lutzseverino.annotation.Name;
 import com.lutzseverino.snippets.Snippet;
-
-import java.util.Scanner;
+import com.lutzseverino.question.Question;
 
 @Name("river") @Name("girona")
-public class RiverDoor implements Snippet {
+public class RiverGate implements Snippet {
 
     /*
         START
@@ -23,13 +22,12 @@ public class RiverDoor implements Snippet {
         END
      */
     @Override public void run() {
-        Scanner scanner = new Scanner(System.in);
+        Question question = new Question();
 
-        System.out.print("¿Cuántos litros de agua por metro cuadrado han llovido?: ");
-        int litersPerSquareMeter = scanner.nextInt();
-
+        int litersPerSquareMeter = question.askInt("¿Cuántos litros de agua por metro cuadrado han llovido?: ");
         boolean isDoorOpen = litersPerSquareMeter > 90;
 
+        System.out.print("\n");
         System.out.println(isDoorOpen ? "La puerta está abierta." : "La puerta está cerrada.");
     }
 }

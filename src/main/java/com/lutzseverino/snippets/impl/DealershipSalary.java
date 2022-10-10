@@ -1,8 +1,7 @@
 package com.lutzseverino.snippets.impl;
 
 import com.lutzseverino.snippets.Snippet;
-
-import java.util.Scanner;
+import com.lutzseverino.question.Question;
 
 public class DealershipSalary implements Snippet {
 
@@ -25,16 +24,13 @@ public class DealershipSalary implements Snippet {
         END
      */
     @Override public void run() {
-        Scanner scanner = new Scanner(System.in);
+        Question question = new Question();
 
-        System.out.print("Introduce el salario base: ");
-        double baseSalary = scanner.nextDouble();
-
+        double baseSalary = question.askDouble("Introduce el salario base: ");
         double totalCommission = 0;
 
         for (int i = 0; i < 3; i++) {
-            System.out.print("Introduce el importe de la venta " + (i + 1) + ": ");
-            double sale = scanner.nextDouble();
+            double sale = question.askDouble("Introduce el importe de la venta " + (i + 1) + ": ");
 
             double commission = sale * 10 / 100;
             totalCommission += commission;

@@ -2,8 +2,7 @@ package com.lutzseverino.snippets.impl;
 
 import com.lutzseverino.annotation.Name;
 import com.lutzseverino.snippets.Snippet;
-
-import java.util.Scanner;
+import com.lutzseverino.question.Question;
 
 @Name("water")
 public class WaterCost implements Snippet {
@@ -28,15 +27,13 @@ public class WaterCost implements Snippet {
         END
      */
     @Override public void run() {
-        Scanner scanner = new Scanner(System.in);
+        Question question = new Question();
 
-        System.out.print("Introduce el consumo de agua en litros: ");
-        int liters = scanner.nextInt();
-
+        int liters = question.askInt("Introduce el consumo de agua en litros: ");
         double fixedFee = 6;
         double variableFee = liters > 50 ? liters < 200 ? 0.15 : 0.30 : 0;
         double totalFee = fixedFee + (variableFee * liters);
 
-        System.out.println("El coste total es de " + totalFee + "€.");
+        System.out.println("\nEl coste total es de " + totalFee + "€.");
     }
 }

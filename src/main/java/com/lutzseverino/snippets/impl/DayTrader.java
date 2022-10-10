@@ -2,8 +2,7 @@ package com.lutzseverino.snippets.impl;
 
 import com.lutzseverino.annotation.Name;
 import com.lutzseverino.snippets.Snippet;
-
-import java.util.Scanner;
+import com.lutzseverino.question.Question;
 
 @Name("trade")
 public class DayTrader implements Snippet {
@@ -26,14 +25,10 @@ public class DayTrader implements Snippet {
         END
      */
     @Override public void run() {
-        Scanner scanner = new Scanner(System.in);
+        Question question = new Question();
 
-        System.out.print("¿Cuánto quieres invertir?: ");
-        double investment = scanner.nextDouble();
-
-        System.out.print("¿Oscila para arriba o para abajo? (s/n): ");
-        boolean oscillation = scanner.next().equals("s");
-
+        double investment = question.askDouble("¿Cuánto quieres invertir?: ");
+        boolean oscillation = question.askBoolean("¿Oscila para arriba o para abajo? (true/false): ");
         double profit = investment * (oscillation ? 2 : -2) / 100;
 
         System.out.println("\nEl beneficio es de " + profit + "€.");
