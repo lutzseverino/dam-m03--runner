@@ -1,6 +1,6 @@
 package com.lutzseverino.util;
 
-public class Color {
+public class ColorUtils {
     // Reset
     public static final String RESET = "\033[0m";  // Text Reset
 
