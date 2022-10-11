@@ -4,8 +4,8 @@ import com.lutzseverino.annotation.Name;
 import com.lutzseverino.snippets.Snippet;
 import com.lutzseverino.question.Question;
 
-@Name("pass")
-public class PassOrNoPass implements Snippet {
+@Name("qualify")
+public class QualifyStatus implements Snippet {
 
     /*
         START

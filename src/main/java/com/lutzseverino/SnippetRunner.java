@@ -31,7 +31,7 @@ public class SnippetRunner {
                 new MaleFemalePercentage(),
                 new RiverGate(),
                 new NegativeNumberLoop(),
-                new PassOrNoPass(),
+                new QualifyStatus(),
                 new DayTrader(),
                 new WaterCost(),
                 new DealershipSalary(),
