@@ -4,7 +4,7 @@ import com.lutzseverino.annotation.Name;
 import com.lutzseverino.snippets.Snippet;
 import com.lutzseverino.question.Question;
 
-@Name("river") @Name("girona")
+@Name("river") @Name("gate")
 public class RiverGate implements Snippet {
 
     /*

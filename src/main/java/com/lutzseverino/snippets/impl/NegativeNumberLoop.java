@@ -5,7 +5,6 @@ import com.lutzseverino.snippets.Snippet;
 import com.lutzseverino.question.Question;
 
 @Name("negative")
-@Name("loop")
 public class NegativeNumberLoop implements Snippet {
 
     /*

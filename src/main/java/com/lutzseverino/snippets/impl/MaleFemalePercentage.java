@@ -4,7 +4,7 @@ import com.lutzseverino.annotation.Name;
 import com.lutzseverino.snippets.Snippet;
 import com.lutzseverino.question.Question;
 
-@Name("percentage") @Name("class")
+@Name("gender")
 public class MaleFemalePercentage implements Snippet {
 
     /*

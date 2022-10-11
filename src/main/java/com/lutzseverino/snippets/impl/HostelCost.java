@@ -1,8 +1,10 @@
 package com.lutzseverino.snippets.impl;
 
+import com.lutzseverino.annotation.Name;
 import com.lutzseverino.snippets.Snippet;
 import com.lutzseverino.question.Question;
 
+@Name("hostel")
 public class HostelCost implements Snippet {
 
     /*

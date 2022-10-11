@@ -4,8 +4,7 @@ import com.lutzseverino.annotation.Name;
 import com.lutzseverino.snippets.Snippet;
 import com.lutzseverino.question.Question;
 
-@Name("overtime")
-@Name("salary")
+@Name("healthcare")
 public class HealthcareSalary implements Snippet {
 
     /*
