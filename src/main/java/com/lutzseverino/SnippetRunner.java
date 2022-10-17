@@ -55,8 +55,8 @@ public class SnippetRunner {
         while (true) {
             System.out.print(ColorUtils.WHITE +
                     "¿Qué quieres ejecutar?\n" +
-                    "    - 'list' para ver la lista de comandos\n" +
-                    "    - 'exit' para salir del programa\n" + ColorUtils.RESET
+                    "\t- 'list' para ver la lista de comandos\n" +
+                    "\t- 'exit' para salir del programa\n" + ColorUtils.RESET
             );
             System.out.print("> ");
 
