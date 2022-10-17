@@ -36,7 +36,8 @@ public class SnippetRunner {
                 new WaterCost(),
                 new DealershipSalary(),
                 new HostelCost(),
-                new Coffee()
+                new Coffee(),
+                new Wallapop()
         );
 
         execute(getRegistry());
