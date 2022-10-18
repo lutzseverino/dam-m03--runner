@@ -31,8 +31,8 @@ public class MaleFemalePercentage implements Snippet {
         int females = question.askInt("¿Cuántas mujeres hay?: ");
         int total = males + females;
 
-        double malePercentage = (double) males / total * 100;
-        double femalePercentage = (double) females / total * 100;
+        float malePercentage = (float) males / total * 100;
+        float femalePercentage = (float) females / total * 100;
 
         System.out.println("\nEl " + malePercentage + "% de la clase son hombres.");
         System.out.println("El " + femalePercentage + "% de la clase son mujeres.");

@@ -37,7 +37,9 @@ public class SnippetRunner {
                 new DealershipSalary(),
                 new HostelCost(),
                 new Coffee(),
-                new Wallapop()
+                new Wallapop(),
+                new BikeHouse(),
+                new CarValueLoss()
         );
 
         execute(getRegistry());
