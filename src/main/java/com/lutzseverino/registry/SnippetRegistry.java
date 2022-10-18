@@ -10,7 +10,7 @@ import java.util.*;
 public class SnippetRegistry {
     private final Map<String, Snippet> snippets = new HashMap<>();
 
-    public void registerAlgorithms(Snippet... registered) {
+    public void registerSnippets(Snippet... registered) {
         for (Snippet algorithm : registered)
             inspectNames(algorithm).forEach(name -> snippets.put(name, algorithm));
     }

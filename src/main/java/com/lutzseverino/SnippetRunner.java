@@ -24,7 +24,7 @@ public class SnippetRunner {
     }
 
     public void init() {
-        getRegistry().registerAlgorithms(
+        getRegistry().registerSnippets(
                 new Terminate(),
                 new ListAvailable(),
                 new HealthcareSalary(),
