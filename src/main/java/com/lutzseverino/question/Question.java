@@ -49,6 +49,19 @@ public class Question {
         return askInt(question, i -> true);
     }
 
+    public float askFloat(String question, Function<Float, Boolean> validator) {
+        return Float.parseFloat(
+                ask(question, s -> {
+                    if (!ValidationUtils.isFloat(s)) return false;
+                    return validator.apply(Float.parseFloat(s));
+                })
+        );
+    }
+
+    public float askFloat(String question) {
+        return askFloat(question, f -> true);
+    }
+
     public double askDouble(String question, Function<Double, Boolean> validator) {
         return Double.parseDouble(
                 ask(question, s -> {
