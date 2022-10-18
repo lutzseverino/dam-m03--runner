@@ -1,8 +1,8 @@
 package com.lutzseverino.snippets.impl;
 
 import com.lutzseverino.annotation.Name;
-import com.lutzseverino.snippets.Snippet;
 import com.lutzseverino.question.Question;
+import com.lutzseverino.snippets.Snippet;
 
 @Name("healthcare")
 public class HealthcareSalary implements Snippet {
@@ -56,9 +56,10 @@ public class HealthcareSalary implements Snippet {
             secondOvertimeRate += 5;
         }
 
-        if (overtimeHours > 0) overtimeSalary = overtimeHours <= 5
-                ? overtimeHours * firstOvertimeRate
-                : (5 * firstOvertimeRate) + ((overtimeHours - 5) * secondOvertimeRate);
+        if (overtimeHours > 0)
+            overtimeSalary = overtimeHours <= 5
+                    ? overtimeHours * firstOvertimeRate
+                    : (5 * firstOvertimeRate) + ((overtimeHours - 5) * secondOvertimeRate);
 
         int totalSalary = baseSalary + overtimeSalary;
 
