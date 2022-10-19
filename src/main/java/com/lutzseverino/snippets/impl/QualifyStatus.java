@@ -1,8 +1,8 @@
 package com.lutzseverino.snippets.impl;
 
 import com.lutzseverino.annotation.Name;
-import com.lutzseverino.snippets.Snippet;
 import com.lutzseverino.question.Question;
+import com.lutzseverino.snippets.Snippet;
 
 @Name("qualify")
 public class QualifyStatus implements Snippet {
@@ -43,15 +43,14 @@ public class QualifyStatus implements Snippet {
         for (int i = 0; i < students; i++) {
             System.out.println("Para el alumno nº" + (i + 1));
 
-            double exercises = question.askDouble("Introduce la nota de los ejercicios entregables: ");
-            double pous = question.askDouble("Introduce la nota de los POUS evaluables: ");
-            double finalExam = question.askDouble("Introduce la nota del examen final: ");
-            double finalEssay = question.askDouble("Introduce la nota de la práctica final: ");
-            double average = (exercises * 0.10) + (pous * 0.20) + (finalExam * 0.40) + (finalEssay * 0.30);
+            float exercises = question.askFloat("Introduce la nota de los ejercicios entregables: ");
+            float pous = question.askFloat("Introduce la nota de los POUS evaluables: ");
+            float finalExam = question.askFloat("Introduce la nota del examen final: ");
+            float finalEssay = question.askFloat("Introduce la nota de la práctica final: ");
+            float average = (exercises * 0.10f) + (pous * 0.20f) + (finalExam * 0.40f) + (finalEssay * 0.30f);
 
             System.out.print("\n");
             System.out.println(average >= 5 ? "Aprobado" : "Suspenso");
         }
-
     }
 }
