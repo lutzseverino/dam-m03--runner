@@ -34,9 +34,9 @@ public class Coffee implements Snippet {
 
         int product = question.askInt(
                 "¿Qué producto desea? \n" +
-                        " 1. Café \n" +
-                        " 2. Cortado \n" +
-                        " 3. Café con leche\n" +
+                        "\t1. Café \n" +
+                        "\t2. Cortado \n" +
+                        "\t3. Café con leche\n" +
                         "> "
         );
 
