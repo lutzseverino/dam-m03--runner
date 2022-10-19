@@ -42,13 +42,12 @@ public class HealthcareSalary implements Snippet {
     @Override public void run() {
         Question question = new Question();
 
-        boolean isSick = question.askBoolean("¿Estás enfermo? (true/false): ");
-        int overtimeHours = question.askInt("¿Cuántas horas extra trabajaste?: ");
-        int baseSalary = question.askInt("¿Cuál es tu salario base?: ");
-
         int firstOvertimeRate = 15;
         int secondOvertimeRate = 12;
         int overtimeSalary = 0;
+        boolean isSick = question.askBoolean("¿Estás enfermo? (true/false): ");
+        int overtimeHours = question.askInt("¿Cuántas horas extra trabajaste?: ");
+        int baseSalary = question.askInt("¿Cuál es tu salario base?: ");
 
         if (isSick) {
             baseSalary += 250;
