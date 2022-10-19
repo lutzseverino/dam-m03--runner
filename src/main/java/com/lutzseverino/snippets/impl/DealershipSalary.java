@@ -40,6 +40,6 @@ public class DealershipSalary implements Snippet {
 
         double totalSalary = baseSalary + totalCommission;
 
-        System.out.println("\nEl salario total es de " + totalSalary + "€.");
+        System.out.println("\nEl salario total es de " + totalSalary + " €.");
     }
 }

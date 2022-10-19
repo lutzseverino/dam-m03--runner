@@ -31,6 +31,6 @@ public class DayTrader implements Snippet {
         boolean oscillation = question.askBoolean("¿Oscila para arriba o para abajo? (true/false): ");
         double profit = investment * (oscillation ? 2 : -2) / 100;
 
-        System.out.println("\nEl beneficio es de " + profit + "€.");
+        System.out.println("\nEl beneficio es de " + profit + " €.");
     }
 }

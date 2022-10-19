@@ -15,6 +15,6 @@ public class BikeHouse implements Snippet {
         float discount = vip || price > 200 ? price * 20 / 100 : 0;
         float total = price - discount;
 
-        System.out.println("\nEl precio final es de " + total + "€.");
+        System.out.println("\nEl precio final es de " + total + " €.");
     }
 }

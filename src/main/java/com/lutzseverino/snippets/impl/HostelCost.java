@@ -62,6 +62,6 @@ public class HostelCost implements Snippet {
 
         if (lateCheckout) totalCost += people * days * 15;
 
-        System.out.println("\nEl coste total es de " + totalCost + "€");
+        System.out.println("\nEl coste total es de " + totalCost + " €");
     }
 }

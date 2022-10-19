@@ -34,6 +34,6 @@ public class WaterCost implements Snippet {
         double variableFee = liters > 50 ? liters < 200 ? 0.15 : 0.30 : 0;
         double totalFee = fixedFee + (variableFee * liters);
 
-        System.out.println("\nEl coste total es de " + totalFee + "€.");
+        System.out.println("\nEl coste total es de " + totalFee + " €.");
     }
 }

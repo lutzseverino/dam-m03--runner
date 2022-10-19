@@ -62,7 +62,7 @@ public class HealthcareSalary implements Snippet {
 
         int totalSalary = baseSalary + overtimeSalary;
 
-        System.out.println("\nTus horas extras constituyen una ganancia de €" + overtimeSalary);
-        System.out.println("Lo que deja un salario final de €" + totalSalary);
+        System.out.println("\nTus horas extras constituyen una ganancia de " + overtimeSalary + " €.");
+        System.out.println("Lo que deja un salario final de " + totalSalary + " €.");
     }
 }

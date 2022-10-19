@@ -12,6 +12,6 @@ public class Wallapop implements Snippet {
         boolean goodState = question.askBoolean("¿Está en buen estado? (true/false): ");
         double finalPrice = goodState ? price * 1.25 : price * 1.10;
 
-        System.out.println("\nEl precio final es de " + finalPrice + "€.");
+        System.out.println("\nEl precio final es de " + finalPrice + " €.");
     }
 }
