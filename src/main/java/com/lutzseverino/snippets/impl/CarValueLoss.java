@@ -10,13 +10,14 @@ public class CarValueLoss implements Snippet {
     @Override public void run() {
         Question question = new Question();
 
+        final float PRICE = 73_490;
+        final float FULL_PRICE = PRICE + 20_000;
+
         int kilometers = question.askInt("Introduce los kilómetros recorridos: ");
         boolean camper = question.askBoolean("¿Es la versión Camper Full Equip? (true/false): ");
-        float price = 73490;
-        float valueLoss = price * kilometers * 0.00001f;
-        float camperPrice = camper ? 20000 : 0;
-        float total = price - valueLoss + camperPrice;
+        float valueLoss = kilometers * 0.00001f;
+        float total = camper ? FULL_PRICE - valueLoss : PRICE - valueLoss;
 
-        System.out.println("\nEl valor de la Volkswagen es de " + total + "€.");
+        System.out.println("\nEl precio final es de " + total + " €, ha perdido " + valueLoss + " € de valor.");
     }
 }
