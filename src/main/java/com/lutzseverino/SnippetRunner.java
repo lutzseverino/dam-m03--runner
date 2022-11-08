@@ -39,7 +39,9 @@ public class SnippetRunner {
                 new Coffee(),
                 new Wallapop(),
                 new BikeHouse(),
-                new CarValueLoss()
+                new CarValueLoss(),
+                new PVP(),
+                new FiveArray()
         );
 
         execute(getRegistry());
