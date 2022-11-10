@@ -3,10 +3,11 @@ package com.lutzseverino.snippets.impl;
 import com.lutzseverino.question.Question;
 import com.lutzseverino.snippets.Snippet;
 
-public class FiveArray implements Snippet {
+public class ArrayEvaluation implements Snippet {
 
     @Override public void run() {
         Question question = new Question();
+
         int[] array = new int[5];
 
         for (int i = 0; i < array.length; i++) array[i] = question.askInt("Introduce el número " + (i + 1) + ": ");

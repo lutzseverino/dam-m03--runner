@@ -41,7 +41,8 @@ public class SnippetRunner {
                 new BikeHouse(),
                 new CarValueLoss(),
                 new PVP(),
-                new FiveArray()
+                new ArrayEvaluation(),
+                new MixedArrays()
         );
 
         execute(getRegistry());
