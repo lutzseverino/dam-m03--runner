@@ -1,5 +1,4 @@
 package com.lutzseverino.snippets;
 
-public interface Snippet {
-    void run();
+public interface Snippet extends Runnable {
 }
