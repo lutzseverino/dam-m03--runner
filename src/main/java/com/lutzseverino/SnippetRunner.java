@@ -42,7 +42,8 @@ public class SnippetRunner {
                 new CarValueLoss(),
                 new PVP(),
                 new ArrayEvaluation(),
-                new MixedArrays()
+                new MixedArrays(),
+                new SchoolAgenda()
         );
 
         execute(getRegistry());
