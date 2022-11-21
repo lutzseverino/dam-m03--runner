@@ -33,7 +33,7 @@ public class Question {
     }
 
     public String ask(String question) {
-        return ask(question, String::isBlank);
+        return ask(question, s -> !s.isBlank());
     }
 
     public int askInt(String question, Function<Integer, Boolean> validator) {
