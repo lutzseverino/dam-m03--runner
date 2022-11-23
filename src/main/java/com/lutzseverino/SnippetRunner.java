@@ -43,7 +43,7 @@ public class SnippetRunner {
                 new PVP(),
                 new ArrayEvaluation(),
                 new MixedArrays(),
-                new SchoolAgenda()
+                new Matrixes()
         );
 
         execute(getRegistry());
