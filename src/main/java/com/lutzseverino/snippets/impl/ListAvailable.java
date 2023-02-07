@@ -9,7 +9,7 @@ public class ListAvailable implements Snippet {
 
     @Override
     public void run() {
-        SnippetRunner.getInstance().getRegistry().getSnippets().keySet().forEach(x -> System.out.println("    - " + x));
+        SnippetRunner.getInstance().getRegistry().getSnippets().keySet().forEach(x -> System.out.println("\t- " + x));
     }
 
 }

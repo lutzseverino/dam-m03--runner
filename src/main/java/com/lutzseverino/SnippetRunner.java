@@ -43,7 +43,8 @@ public class SnippetRunner {
                 new PVP(),
                 new ArrayEvaluation(),
                 new MixedArrays(),
-                new Matrixes()
+                new Matrixes(),
+                new GradeStorage()
         );
 
         execute(getRegistry());
