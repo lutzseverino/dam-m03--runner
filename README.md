@@ -1,4 +1,4 @@
-![github-frame](https://user-images.githubusercontent.com/28309837/190473459-87330beb-bc21-42d5-961b-c73b55332ffb.png)
+![github-frame](https://user-images.githubusercontent.com/28309837/236691630-e181a539-9d15-4343-951f-c518668b1570.png)
 
 A simple, CLI based program to register and execute code snippets made for the DAM M03 course. Its purpose is merely educational and for
 commodity.
