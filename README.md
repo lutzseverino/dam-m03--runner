@@ -1,11 +1,9 @@
-![github-frame](https://user-images.githubusercontent.com/28309837/236691630-e181a539-9d15-4343-951f-c518668b1570.png)
+![dam-m03--runner](https://user-images.githubusercontent.com/28309837/236695611-bb12a92c-212d-43f3-8338-521417f28b78.png)
 
-A simple, CLI based program to register and execute code snippets made for the DAM M03 course. Its purpose is merely educational and for
-commodity.
+A simple code snippet runner that registers and executes code snippets.
 
-This repository already includes some snippets that were present in the course, but you are free to easily add your own.
-
-The program is **intentionally simple** and **purposefully CLI based**.
+> **Note**
+> This repository already includes some code snippets.
 
 ## How to run
 
@@ -27,3 +25,6 @@ java -jar target/dam-m03-snippet-runner-1.0-SNAPSHOT.jar
 
 - Java 11
 - Maven
+
+## Project background
+This was an **independent project** created for the **CFGS DAM course**.
